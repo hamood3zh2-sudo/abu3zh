@@ -293,3 +293,160 @@ salla-menu[topnav]:not(.hydrated) {
     );
   }
 }
+/* Jebtha / GamsGo-inspired header - stage 1 */
+.jebtha-header {
+  --jebtha-header-bg: #ef534f;
+  --jebtha-header-white-soft: rgba(255, 255, 255, 0.2);
+
+  position: sticky;
+  top: 0;
+  z-index: 1999;
+
+  .jebtha-main-nav {
+    min-height: 64px !important;
+    background: var(--jebtha-header-bg) !important;
+    box-shadow: none !important;
+
+    @media (min-width: 1024px) {
+      min-height: 72px !important;
+    }
+
+    .inner {
+      background: transparent !important;
+    }
+  }
+
+  .jebtha-nav {
+    height: 64px;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+
+    @media (min-width: 1024px) {
+      height: 72px;
+      gap: 48px;
+    }
+  }
+
+  .jebtha-nav__left {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    min-width: 0;
+
+    @media (min-width: 1024px) {
+      gap: 48px;
+    }
+  }
+
+  .jebtha-menu-trigger {
+    color: #fff;
+    font-size: 24px;
+  }
+
+  .jebtha-brand {
+    margin: 0 !important;
+    flex-shrink: 0;
+
+    img {
+      width: auto;
+      max-width: 116px;
+      max-height: 24px;
+
+      @media (min-width: 1024px) {
+        max-width: 148px;
+        max-height: 28px;
+      }
+    }
+  }
+
+  .jebtha-menu {
+    color: #fff;
+
+    a,
+    .menu-item,
+    .menu-item > a {
+      color: #fff !important;
+    }
+
+    .menu-item > a {
+      min-height: 40px;
+      padding-inline: 16px;
+      border-radius: 24px;
+      display: inline-flex;
+      align-items: center;
+    }
+  }
+
+  .jebtha-search {
+    width: 407px;
+    max-width: 34vw;
+    margin-inline-start: auto;
+
+    .s-search-input {
+      height: 40px !important;
+      border: 0 !important;
+      border-radius: 20px !important;
+      background: var(--jebtha-header-white-soft) !important;
+      color: #fff !important;
+      box-shadow: none !important;
+    }
+
+    .s-search-input::placeholder {
+      color: rgba(255, 255, 255, 0.9) !important;
+    }
+
+    .s-search-icon,
+    svg,
+    i {
+      color: #fff !important;
+    }
+  }
+
+  .jebtha-actions {
+    margin-inline-start: auto;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 8px;
+    color: #fff;
+
+    @media (min-width: 1024px) {
+      gap: 16px;
+      margin-inline-start: 0;
+    }
+  }
+
+  .jebtha-scope {
+    height: 40px;
+    align-items: center;
+    gap: 8px;
+    padding-inline: 14px;
+    border-radius: 24px;
+    color: #fff;
+    border: 1px solid rgba(255, 255, 255, 0.35);
+  }
+
+  salla-user-menu,
+  salla-cart-summary,
+  salla-localization-modal {
+    color: #fff;
+  }
+
+  .header-btn__icon {
+    width: 40px;
+    height: 40px;
+    border-color: rgba(255, 255, 255, 0.35) !important;
+    background: rgba(255, 255, 255, 0.12);
+    color: #fff !important;
+  }
+
+  .s-cart-summary-total {
+    color: #fff !important;
+  }
+
+  .s-cart-summary-count {
+    background: #111827 !important;
+    color: #fff !important;
+  }
+}
