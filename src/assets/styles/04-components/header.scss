@@ -450,3 +450,39 @@ salla-menu[topnav]:not(.hydrated) {
     color: #fff !important;
   }
 }
+
+/* Jebtha / GamsGo-inspired header - logo text refinement */
+.jebtha-header {
+  .jebtha-brand--text {
+    width: auto;
+    height: 40px;
+    min-width: 148px;
+    display: inline-flex !important;
+    align-items: center;
+    justify-content: flex-start;
+    margin: 0 !important;
+    text-decoration: none !important;
+    flex-shrink: 0;
+  }
+
+  .jebtha-brand-word {
+    color: #fff;
+    font-size: 28px;
+    font-weight: 900;
+    line-height: 1;
+    letter-spacing: -0.04em;
+    text-transform: uppercase;
+    white-space: nowrap;
+  }
+
+  @media (max-width: 1023px) {
+    .jebtha-brand--text {
+      min-width: 116px;
+      height: 40px;
+    }
+
+    .jebtha-brand-word {
+      font-size: 24px;
+    }
+  }
+}
