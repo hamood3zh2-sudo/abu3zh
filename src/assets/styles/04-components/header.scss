@@ -486,3 +486,164 @@ salla-menu[topnav]:not(.hydrated) {
     }
   }
 }
+
+/* Jebtha header - stage 2: desktop menu alignment */
+@media (min-width: 1024px) {
+  .jebtha-header {
+    custom-main-menu {
+      min-height: 40px !important;
+      height: 40px !important;
+      display: block !important;
+    }
+
+    .main-menu,
+    custom-main-menu ul,
+    custom-main-menu .main-menu {
+      height: 40px !important;
+      min-height: 40px !important;
+      display: flex !important;
+      align-items: center !important;
+      gap: 8px !important;
+      margin: 0 !important;
+      padding: 0 !important;
+    }
+
+    .main-menu > li,
+    custom-main-menu li {
+      height: 40px !important;
+      display: flex !important;
+      align-items: center !important;
+      margin: 0 !important;
+      padding: 0 !important;
+    }
+
+    .main-menu > li > a,
+    custom-main-menu li > a {
+      height: 40px !important;
+      min-height: 40px !important;
+      display: inline-flex !important;
+      align-items: center !important;
+      justify-content: center !important;
+      padding: 0 16px !important;
+      border-radius: 24px !important;
+      color: #fff !important;
+      line-height: 1 !important;
+      white-space: nowrap !important;
+    }
+
+    .main-menu > li > a:hover,
+    custom-main-menu li > a:hover {
+      background: rgba(255, 255, 255, 0.14) !important;
+      color: #fff !important;
+    }
+  }
+}
+
+/* Jebtha / GamsGo-inspired home hero */
+.jebtha-home-hero {
+  background: #ef534f;
+  min-height: 300px;
+  padding: 48px 20px 72px;
+  margin-top: -1px;
+  color: #fff;
+  position: relative;
+  overflow: hidden;
+}
+
+.jebtha-home-hero__inner {
+  width: 100%;
+  max-width: 1366px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.jebtha-home-hero__title {
+  color: #fff;
+  font-size: 48px;
+  font-weight: 900;
+  line-height: 1.15;
+  margin: 0 0 34px;
+  letter-spacing: -0.03em;
+}
+
+.jebtha-home-hero__categories {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+  flex-wrap: wrap;
+}
+
+.jebtha-home-category {
+  width: 166px;
+  height: 92px;
+  border-radius: 22px;
+  background: #fff;
+  color: #2b2b2b;
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  text-decoration: none !important;
+  font-size: 15px;
+  font-weight: 800;
+  box-shadow: 0 18px 38px rgba(27, 31, 35, 0.12);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.jebtha-home-category:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 24px 46px rgba(27, 31, 35, 0.18);
+  color: #2b2b2b;
+}
+
+.jebtha-home-category__icon {
+  width: 38px;
+  height: 38px;
+  border-radius: 14px;
+  background: rgba(239, 83, 79, 0.1);
+  color: #ef534f;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  font-weight: 900;
+}
+
+.jebtha-home-content {
+  position: relative;
+  z-index: 2;
+  margin-top: -42px;
+}
+
+@media (max-width: 1023px) {
+  .jebtha-home-hero {
+    min-height: 260px;
+    padding: 36px 14px 58px;
+  }
+
+  .jebtha-home-hero__title {
+    font-size: 32px;
+    margin-bottom: 24px;
+  }
+
+  .jebtha-home-hero__categories {
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    padding-bottom: 10px;
+  }
+
+  .jebtha-home-category {
+    width: 138px;
+    min-width: 138px;
+    height: 84px;
+    border-radius: 18px;
+    font-size: 14px;
+  }
+
+  .jebtha-home-content {
+    margin-top: -30px;
+  }
+}
